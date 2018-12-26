@@ -342,14 +342,31 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+	 var prefix = "b!"
+            if (message.content.startsWith(prefix + "help")) {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('     **البريفكس [$help] ** ')
+.addField('     **(1)-$play** ' ,' **تفتح موسيقي** ')
+.addField('     **(2)-$skip**  ' ,' **تحول للاغنيه البعدها** ')
+.addField('     **(3)-$stop** ' , '**تخرج البوت من الروم**') 
+.addField('     **(4)-$pause** ' , '**ايقاف الاغنيه**') 
+.addField('     **(5)-$resume** ' ,' ** تشغيل الاغنيه** ')
+.addField('     **(6)-$vol** ' ,' ** تعلي او توطي الصوت** ')
+.setColor('#ff0004')
+  message.channel.sendEmbed(embed);
+    }
+});
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : EX Clan`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : youseef ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$play | ArabKings`,"http://twitch.tv/Death Shop")
+client.user.setGame(`$play | ArabKings`,"http://twitch.tv/youseef")
 client.user.setStatus("dnd")
 });
 
