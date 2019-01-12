@@ -366,7 +366,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : youseef ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$play | ArabKings`,"http://twitch.tv/youseef")
+client.user.setGame(`$play | Cosita Network`,"http://twitch.tv/Cosita")
 client.user.setStatus("dnd")
 });
 
